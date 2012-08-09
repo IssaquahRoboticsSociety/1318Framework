@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-public class DrivetrainEncoderDataTest {
+public class DrivetrainEncoderDataTest extends DataStructureTest{
 	DrivetrainEncoderData one;
 	DrivetrainEncoderData two;
 	
