@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="var" path="ROBOT_REPO/FRC1318Framework/libs/classes.jar"/>
+	<classpathentry kind="var" path="ROBOT_REPO/FRC1318Framework/libs/squawk_device.jar"/>
+	<classpathentry kind="var" path="ROBOT_REPO"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>
