@@ -2,6 +2,7 @@ package org.usfirst.frc1318.components.reference;
 
 import org.usfirst.frc1318.components.RobotComponentBase;
 import org.usfirst.frc1318.shared.ReferenceData;
+import org.usfirst.frc1318.shared.constants.PortRef;
 import org.usfirst.frc1318.shared.data.TankDriveInput;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -17,6 +18,10 @@ public class JoystickReader extends RobotComponentBase{
 		tdInput = new TankDriveInput();
 	}
 	
+	public JoystickReader() {
+		this(new Joystick(PortRef.JS_LEFT_PORT), new Joystick(PortRef.JS_RIGHT_PORT));
+	}
+
 	public void teleopPeriodic(){
 		tdInput.setAll(left.getY(), right.getY());
 		

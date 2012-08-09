@@ -2,9 +2,11 @@ package org.usfirst.frc1318.components.controllers;
 
 import org.usfirst.frc1318.components.RobotComponentBase;
 import org.usfirst.frc1318.shared.KinematicData;
+import org.usfirst.frc1318.shared.constants.PortRef;
 import org.usfirst.frc1318.shared.constants.RobotSpecs;
 import org.usfirst.frc1318.shared.data.TankDriveSetPoints;
 
+import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.SpeedController;
 
 public class TankDriveController extends RobotComponentBase {
@@ -20,6 +22,13 @@ public class TankDriveController extends RobotComponentBase {
 	}
 	
 	
+	public TankDriveController() {
+		this(new Jaguar(PortRef.MTR_LEFT_SLOT, PortRef.MTR_LEFT_CHNL),
+			new Jaguar(PortRef.MTR_RIGHT_SLOT, PortRef.MTR_RIGHT_CHNL)				
+		);
+	}
+
+
 	public void teleopPeriodic() {
 		KinematicData.getInstance().getTankDriveSetPoints().copyTo(currentSetPoints);
 		
