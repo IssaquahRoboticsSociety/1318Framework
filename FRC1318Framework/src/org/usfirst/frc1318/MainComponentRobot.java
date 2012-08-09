@@ -31,5 +31,11 @@ public class MainComponentRobot extends IterativeComponentRobot {
 		components.add(new WheelEncoderDebugger());
 		return components;
 	}
+	
+	public BotVector debugJoystickAxis(){
+		BotVector components = new BotVector();
+		components.add(new JoystickAxisDebugger());
+		return components;
+	}
 
 }

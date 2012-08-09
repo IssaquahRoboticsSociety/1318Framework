@@ -29,5 +29,13 @@ public class JoystickReader extends RobotComponentBase{
 	}
 	
 	public void autonomousPeriodic() {}
+	
+	public Joystick getLeftJS() {
+		return left;
+	}
+	
+	public Joystick getRightJS(){
+		return right;
+	}
 
 }
