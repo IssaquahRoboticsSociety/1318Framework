@@ -1,6 +1,7 @@
 package org.usfirst.frc1318.shared;
 
 import org.usfirst.frc1318.shared.data.DrivetrainEncoderData;
+import org.usfirst.frc1318.shared.data.TankDriveInput;
 
 public class ReferenceData {
 	
@@ -13,6 +14,7 @@ public class ReferenceData {
 	}
 	
 	private DrivetrainEncoderData dted;
+	private TankDriveInput tdin;
 	
 	private ReferenceData() {}
 
@@ -24,6 +26,12 @@ public class ReferenceData {
 		if(dted == null)
 			dted = new DrivetrainEncoderData();
 		return dted;
+	}
+
+	public TankDriveInput getTankDriveInput() {
+		if(tdin == null)
+			tdin = new TankDriveInput();
+		return tdin;
 	}
 	
 
