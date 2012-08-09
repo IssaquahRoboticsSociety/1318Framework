@@ -36,4 +36,14 @@ public class TankDriveController extends RobotComponentBase {
 		right.set(currentSetPoints.getRightSpeed() / RobotSpecs.MAX_WHEEL_RATE);
 	}
 
+
+	public SpeedController getLeftController() {
+		return left;
+	}
+
+
+	public SpeedController getRightController() {
+		return right;
+	}
+
 }

@@ -36,4 +36,14 @@ public class EncoderReader extends RobotComponentBase {
 		currentWheelReadings.copyTo(ReferenceData.getInstance().getDrivetrainEncoderData());
 	}
 
+	public Encoder getLeftEnc() {
+		return leftWheel;
+	}
+
+	public Encoder getRightEnc() {
+		return rightWheel;
+	}
+	
+	
+
 }
